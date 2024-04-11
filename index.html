@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <title>SkillTube | Top YouTube Channels for Learning</title>
 </head>
 <body>
@@ -34,12 +35,23 @@
   </nav>
 </header>
 
-<div class="container-1">
-  <div class="ecris">
-    <div class="centered-text"><p><a href="#skills">SkillTube</a></p></div>
-    <p><span>SkillTube</span>Your curated collection of Top YouTube Channels for Learning and mastering skills. <br> Explore, discover, and elevate your learning with the best channels in <br> e-commerce, coding, ethical hacking, and more.</p>
+<section class="WelCome">
+  <div class="cover"></div>
+  <div class="content">
+      <div class="text">
+          <h2>Hi !</h2>
+      </div>
+      <div class="main_content">
+          <h1>SkillTube</h1>
+          <p> <span style="color: #007bff; font-weight: 600;">SKILLTUBE</span> Your curated collection of Top YouTube Channels for Learning and mastering skills.
+            <br>Explore, discover, and elevate your learning with the best channels in
+            e-commerce, coding, ethical hacking, and more.</p>
+          <div class="btn-1">
+            <a href="#skills">Join NOW</a>
+          </div>
+      </div>
   </div>
-</div>
+</section>
 
 <!--skills page-->
 <section class="skills-channels" id="skills">
@@ -61,6 +73,7 @@
           <a href="https://www.youtube.com/@ElgoharyAI">Elgohary AI (Ar)</a>
       </div>
   </div>
+
   <div class="dropdown-1">
     <a class="dropbtn-1"><i>Data sience and analytics</i><i class='bx bx-chevron-down'></i></a>
     <div class="dropdown-content-1">
@@ -70,6 +83,10 @@
     </div>
   </div>
   
+  <br>
+  <br>
+  <br>
+
   <div class="dropdown-1">
     <a class="dropbtn-1"><i>CyberSecurity</i><i class='bx bx-chevron-down'></i></a>
     <div class="dropdown-content-1">
@@ -232,6 +249,55 @@
   var navLinks = document.getElementById("navLinks");
   navLinks.classList.toggle("show");
 }
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    anime.timeline({
+
+        })
+        .add({
+            targets: '.cover',
+            height: ['60%', '200%'],
+            top: ['-90%', '100%'],
+            easing: 'easeInOutCubic',
+            duration: '1600'
+        })
+        .add({
+            targets: '.text h2',
+            top: ['-150%', '50%'],
+            easing: 'easeOutQuad',
+            offset: '-=600',
+            duration: '700'
+        })
+        .add({
+            targets: '.text h2',
+            top: ['50%', '150%'],
+            easing: 'easeOutQuad',
+            offset: '+=1000',
+            duration: '700'
+        })
+        .add({
+            targets: '.cover',
+            height: ['60%', '200%'],
+            top: ['-90%', '100%'],
+            easing: 'easeInOutCubic',
+            duration: '1600',
+            offset: '-=400',
+            complete: (anim) => {
+                document.querySelector('.text').style.display = 'none';
+                document.querySelector('.main_content').style.display = 'block';
+            }
+        })
+        .add({
+            targets: '.main_content h1,p',
+            translateY: [50, 0],
+            opacity: [0,1],
+            easing: 'easeOutExpo',
+            delay: (el,i)=>i*150
+        })
+
+})
+
 </script>
 </body>
 </html>
