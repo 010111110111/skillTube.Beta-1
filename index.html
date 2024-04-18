@@ -3,47 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-adsense-account" content="ca-pub-8026618295479371">
-  <meta name="google-site-verification" content="jUWzt8LhcWvot642ZodLghJCBFBR2hV6_QpsH9cylNY" />
   <link rel="stylesheet" href="styles.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8026618295479371"
-     crossorigin="anonymous"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SNP349VE7G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SNP349VE7G');
-</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  
   <title>SkillTube | Top YouTube Channels for Learning</title>
 </head>
 <body>
+  <div class="loader">
+    <img src="icon.JPG" alt="Loading...">
+  </div>
   <header>
+    <div class="burger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>    
   <div class="logo">
     <h1><a href="#skills">Skill<span>Tube</span></a></h1>
-  </div>
-  <div class="burger-menu" onclick="toggleMenu()">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
   </div>
   <nav class="nav-links" id="navLinks">
     <a href="index.html"><i>Home</i></a>
     <a href="#About"><i>About</i></a>
     <a href="#Services"><i>Services</i></a>
     <a href="#contact-section"><i>Contact</i></a>
-    <div class="dropdown">
-      <a class="dropbtn"><i>Social links</i><i class='bx bx-chevron-down'></i></a>
-      <div class="dropdown-content">
-          <a href="#">Telegram <i class='bx bxl-telegram'></i></a>
-          <a href="https://www.youtube.com/@Learnopia-FreeCourses">YouTube <i class='bx bxl-youtube'></i></a>
-          <a href="#">Discord <i class='bx bxl-discord-alt' ></i></a>
-      </div>
-  </div>
+    </div>
   </nav>
 </header>
 
@@ -58,9 +43,11 @@
           <p> <span style="color: #007bff; font-weight: 600;">SKILLTUBE</span> Your curated collection of Top YouTube Channels for Learning and mastering skills.
             <br>Explore, discover, and elevate your learning with the best channels in
             e-commerce, coding, ethical hacking, and more.</p>
-          <div class="btn-1">
-            <a href="#skills">Join NOW</a>
-          </div>
+          <center>
+            <div class="btn-1">
+              <a href="#skills">Join Now</a>
+            </div>
+          </center>
       </div>
   </div>
 </section>
@@ -86,6 +73,11 @@
       </div>
   </div>
 
+  <br>
+  <br>
+  <br>
+  <br>
+
   <div class="dropdown-1">
     <a class="dropbtn-1"><i>Data sience and analytics</i><i class='bx bx-chevron-down'></i></a>
     <div class="dropdown-content-1">
@@ -94,7 +86,8 @@
         <a href="https://www.youtube.com/@IBMTechnology">IBM Technology (En)</a>
     </div>
   </div>
-  
+
+  <br>
   <br>
   <br>
   <br>
@@ -108,6 +101,11 @@
     </div>
   </div>
   
+  <br>
+  <br>
+  <br>
+  <br>
+
   <div class="dropdown-1">
     <a class="dropbtn-1"><i>Cloud Computing</i><i class='bx bx-chevron-down'></i></a>
     <div class="dropdown-content-1">
@@ -117,6 +115,11 @@
     </div>
   </div>
   
+  <br>
+  <br>
+  <br>
+  <br>
+
   <div class="dropdown-1">
     <a class="dropbtn-1"><i>Marketing</i><i class='bx bx-chevron-down'></i></a>
     <div class="dropdown-content-1">
@@ -127,6 +130,7 @@
   </div>
   </div>
 
+  <br>
   <br>
   <br>
   <br>
@@ -141,6 +145,12 @@
         <a href="https://www.youtube.com/@HossamEmbaby">IoT بالعربي (Ar)</i></a>
     </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+
 <div class="dropdown-1">
   <a class="dropbtn-1"><i>E-commerce</i><i class='bx bx-chevron-down'></i></a>
   <div class="dropdown-content-1">
@@ -149,6 +159,11 @@
       <a href="https://www.youtube.com/@Drammaromar">Dr. Ammar Omar (Ar)</a>
   </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
 
 <div class="dropdown-1">
   <a class="dropbtn-1"><i>UX/UI Design</i><i class='bx bx-chevron-down'></i></a>
@@ -162,7 +177,7 @@
 
   <br>
   <br>
-
+  
 </section>
 
 <!--end of skills page-->
@@ -187,8 +202,8 @@
       </div>
       <div class="icon-1"><i class='bx bx-group'></i></div>
       <h3>Community Forums</h3>
-      <p>Join our vibrant community forums to connect, learn, and grow your skills with like-minded individuals.</p>
-      <button class="btn"><a href="#">Join Now</a></button>
+      <p>Join our vibrant community forums to connect, learn, and grow your skills with like-minded individuals. (Free)</p>
+      <button class="btn"><a href="https://t.me/SkillTubeCommunity">Join Now</a></button>
     </div>
 </section>
 
@@ -213,40 +228,40 @@
 </seciton>
 <!--end of about page-->
 
-<section class="contact-us" id="contact-section">
-  <form id="contact" action="" method="post">
-   
-    <div class="section-heading">
-       <div class="iconss"><center><a href="#"><i class='bx bxl-telegram'></i></a> <a href="#"><i class='bx bxl-discord-alt' ></i></a> <a href="https://www.youtube.com/@Learnopia-FreeCourses/videos"><i class='bx bxl-youtube' ></i></a></center></div>
-      <h4>Contact us</h4>
+  <div class="contact-us" id="contact-section">
+
+    <div class="title-contact">
+      <center>
+        <h2>More Info</h2>
+      </center>
     </div>
 
-    <div class="inputField">
-      <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>
-      <span class="valid_info_name"></span>
+
+    <div class="contact-info">
+      <div class="card-1">
+        <div class="ic0n" style="font-size: 70px;"><i class='bx bxs-envelope' style='color:#f43206' ></i></div>
+        <div class="card-content-1">
+          <a href="#" style="text-decoration: none; "><h3>Email (down)</h3></a>
+        </div>
+      </div>
+    
+      <div class="card-1">
+        <div class="ic0n" style="font-size: 70px;"><i class='bx bxl-youtube'></i></div>
+        <div class="card-content-1">
+          <a href="https://www.youtube.com/@Learnopia-FreeCourses"><h3>Skill Tube</h3></a>
+          <span></span>
+        </div>
+      </div>
+    
+      <div class="card-1">
+        <div class="ic0n" style="font-size: 70px;"><i class='bx bxl-telegram' style='color: #007bff;' ></i></div>
+        <div class="card-content-1">
+          <a href="https://t.me/Krypt0On"><h3>Telegram</h3></a>
+        </div>
+      </div>
     </div>
 
-    <div class="inputField">
-      <input type="Email" name="email" id="email" placeholder="Your email" required="" />
-      <span class="valid_info_email"></span>
-    </div>
-
-    <div class="inputField">
-      <input type="text" name="text" id="text" placeholder="What Service You Want" required="" />
-      <span class="valid_info_email"></span>
-    </div>
-
-    <div class="inputField">
-      <textarea name="message" id="message" placeholder="Your message"></textarea>
-      <span class="valid_info_message"></span>
-    </div>
-
-    <div class="inputField btn">
-      <button type="submit" id="form-submit" class="main-gradient-button" disabled>Send a message</button>
-    </div>
-
-  </form>
-</section>
+  </div>
   <footer class="site-footer">
     <div class="footer-des">
       <p>&copy; 2024 Skill-Tube | Coded by <a href="https://www.instagram.com/seb3i._.dev/?theme=dark">AloulouSebei</a></p>
@@ -256,6 +271,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="load-1.js"></script>
 <script>
   function toggleMenu() {
   var navLinks = document.getElementById("navLinks");
