@@ -492,7 +492,7 @@ section {
 
 
 @media screen and (max-width:900px){
-  .card-{
+  .card-1{
       flex: 100%;
       max-width: 500px;
   }
