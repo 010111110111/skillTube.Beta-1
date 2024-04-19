@@ -407,6 +407,7 @@ section {
 
 .contact-us {
   background-color: #1f1f1f;
+  height: 99vh;
 }
 
 .contact-info {
@@ -491,7 +492,7 @@ section {
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:900px) {
   .card-1{
       flex: 100%;
       max-width: 500px;
